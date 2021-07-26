@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!--fonte título e btns-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <!--fonte resto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+</head>
+<title>Project Trybewarts</title>
+</head>
+
+<body>
+  <!-- 1. Crie uma barra verde na parte superior da página -->
+  <header class="header">
+    <!--2. Adicione o logotipo da Trybewarts com a classe trybewarts-header-logo no canto esquerdo da barra superior-->
+    <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo">
+    <!-- 4. Crie um título com o texto 'Trybewarts' centralizado dentro do 'Header' -->
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <!-- 3. Acrescente um formulário de autenticação no canto direito da barra superior contendo os inputs de login, de senha e um botão de entrar -->
+    <form action="" method="GET" enctype="multipart/form-data" class="trybewarts-login">
+      <input placeholder="Login" id="input-login">
+      <input placeholder="Senha" id="input-senha">
+      <button type="button" id="btn-login">Entrar</button>
+    </form>
+  </header>
+  <main>
+    <!--8.Acrescente no formulário os inputs de 'Nome:', 'Sobrenome:' e 'Email:'-->
+    <form id="evaluation-form">
+      <div class="nome-sobr">
+        <label for="input-name"> Name </label>
+        <input id="input-name" placeholder="Nome">
+        <label for="input-lastname"> Last Name</label>
+        <input id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div id="email-e-casa">
+        <label for="input-email"> Email </label>
+        <input id="input-email" placeholder="Email">
+        <!-- 9. Crie um select 'Casa' contendo quatro options -->
+        <label for="house">Casa</label>
+        <select id="house">
+          <option value="Gitnória" text="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" text="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" text="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" text="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+
+      <!--12. Crie um campo de entrada para qual família a pessoa estudante se identifica-->
+      <label for="" id="label-family">Qual sua família?</label>
+      <div><input type="radio" name="family" value="Frontend">Frontend</div>
+      <div> <input type="radio" name="family" value="Backend">Backend</div>
+      <div> <input type="radio" name="family" value="FullStack">Fullstack</div>
+      <br>
+
+      <div>
+        <!-- 13. Crie campos de entrada do tipo 'checkbox' contendo seis opções -->
+        <div id="label-content">
+          <p> Qual conteúdo você está com mais vontade de aprender?</p>
+        </div>
+        <label for="hofs"></label>
+        <input type="checkbox" class="subject" value="HoFs" id="hofs">HoFs
+        <label for="jest"></label>
+        <input type="checkbox" class="subject" value="Jest" id="jest">Jest
+        <label for="promises"></label>
+        <input type="checkbox" class="subject" value="Promises" id="promises">Promises
+        <label for="react"></label>
+        <input type="checkbox" class="subject" value="React" id="react">React
+        <label for="sql"></label>
+        <input type="checkbox" class="subject" value="SQL" id="sql">SQL
+        <label for="python"></label>
+        <input type="checkbox" class="subject" value="Python" id="python">Promises
+
+        <br>
+        <br>
+        <!--14. Crie campo de entrada para avaliar de 1 a 10 o nível de satisfação com a Trybewarts-->
+        <div class="label-rate">
+          <label id="label-rate"> Como você avalia a Trybewarts? </label>
+          <input type="radio" name="rate" value="1">
+          <input type="radio" name="rate" value="2">
+          <input type="radio" name="rate" value="3">
+          <input type="radio" name="rate" value="4">
+          <input type="radio" name="rate" value="5">
+          <input type="radio" name="rate" value="6">
+          <input type="radio" name="rate" value="7">
+          <input type="radio" name="rate" value="8">
+          <input type="radio" name="rate" value="9">
+          <input type="radio" name="rate" value="10">
+        </div>
+      </div>
+
+      <!-- 15. Crie uma textarea com o id 'textarea' e uma label com a classe 'textarea' contendo o número máximo de caracteres igual à 500 -->
+      <label for="textarea" class="textarea">Deixe seu comentário:</label>
+      <textarea id="textarea" maxlength="500" cols="10" rows="10"></textarea>
+      <!--20. Crie um contador com o ID 'counter' contendo o número de caracteres disponíveis no textarea.-->
+      <span id="counter">500 caracteres</span>
+      <!--16. Crie um campo de entrada do tipo 'checkbox' com o id 'agreement' para validar as informações-->
+      <div><label id="label-infos">Você concorda com o uso das informações acima?</label> <input id="agreement"
+          type="checkbox">
+      </div>
+      <br>
+      <!--17. Crie um botão de Enviar para submeter o formulário-->
+      <button id="submit-btn" type="submit" disabled>Enviar</button>
+
+    </form> <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
+  </main>
+  <!--19. Crie um rodapé no final da página-->
+  <footer>Direitos reservados à Trybewarts©</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

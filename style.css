@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+#trybewarts-header-title {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  -webkit-text-stroke: 1px green;
+
+  /* borda no texto */
+  font-family: Shadows Into Light, cursive;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  max-height: 120px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+
+}
+
+/* 10. Alinhe os campos de 'Nome' e 'Sobrenome' para que fiquem em linha */
+.nome-sobr {
+  display: flex;
+
+}
+
+/* 11. Alinhe os campos de 'Email' e 'Casa' para que fiquem em linha */
+#email-e-casa {
+  display: flex;
+}
+
+/* 15 */
+#textarea {
+  resize: none;
+}
+
+.label-rate {
+  display: flex;
+  align-items: baseline;
+
+  /* alinha radios com texto */
+}
+
+#label-rate {
+  padding: 0;
+}
+
+input , select , textarea , label , p {
+  border-radius: 10px;
+  margin: 3px;
+  color: blue;
+  padding: 6px;
+}
+
+select {
+  color: inherit;
+
+  /* deixou meu select sem a cor determinada acima */
+}
+
+#btn-login , #input-login , #input-senha {
+  border-radius: 10px;
+  padding: 8px;
+  margin: 0;
+}
+
+form , :placeholder-shown , select {
+  font-family: Encode Sans SC, sans-serif;
+  font-size: 20px;
+}
+
+#submit-btn , #btn-login {
+  background-color: rgb(204, 202, 61);
+  font-family: Shadows Into Light, cursive;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  font-size: 12px;
+}
